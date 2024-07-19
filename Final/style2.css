@@ -1,0 +1,180 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+body {
+  
+  display: inline-block;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+body::after{
+  content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 120%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #0a0a0b 0%, #2d0a0a 100%);
+	
+  opacity: 0.9;
+	z-index: -1;
+}
+  #Locations .Locations {
+	
+    text-align: center;
+    margin: 0 auto;
+
+  }
+  header .icon{
+    text-align: center;
+    margin-left: 500px;
+    
+  }
+  section{
+    float: left;
+    margin-left: 300px;
+    align-items: center;
+    text-align: center;
+  }
+  article{
+    float: right;
+    margin-left: 300px;
+    flex-direction: column;
+    text-align: center;
+    max-width: max-content;
+
+  }
+   
+  div.elem-group {
+    margin: 20px 0;
+  }
+  div.elem-group.inlined {
+    width: 100%;
+    display: inline-block;
+    margin-left: 1%;
+  }
+  label {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 10px;
+    font-size: 1.25em;
+  }
+  
+  input, select, option {
+    border-radius: 2px;
+    color: #000000;
+    border: 2px solid rgb(0, 0, 0);
+    box-sizing: border-box;
+    font-size: 1.25em;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+  }
+ 
+  
+  hr {
+    border: 5px dotted rgb(255, 255, 255);
+  }
+  
+  button {
+    appearance: none;
+    background-color: rgb(255, 155, 0);
+    border: 2px solid rgb(255, 130, 0);
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family:  'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 40%;
+    will-change: transform;
+  }
+  
+  button:disabled {
+    pointer-events: none;
+  }
+  
+  button:hover {
+    box-shadow: rgba(255, 255, 255, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  button:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+  @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap");
+
+* {
+  box-sizing: border-box ;
+  color: white;
+  text-transform: capitalize ;
+  font-family: "Noto Sans JP", sans-serif;
+  letter-spacing: 2px;
+}
+
+
+
+.win-grid {
+  border: 1px solid white;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 0.2rem;
+  align-items: auto;
+  text-align: center;
+  padding: 2rem;
+  cursor: default;
+}
+
+.win-btn {
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0px;
+  border: 3px solid transparent;
+}
+
+/* Today's Date */
+.win-btn-active-1 {
+  background: rgb(255, 0, 149);
+}
+.win-btn-active-2 {
+  background: rgb(255, 0, 230);
+}
+.win-btn-active-3 {
+  background: rgb(51, 0, 255);
+}
+.win-btn-active-4 {
+  background: rgb(0, 255, 26);
+
+}
+.win-btn-active-5 {
+  background: rgb(255, 255, 0);
+}
+
+/* Other Month's Date */
+.win-btn-inactive {
+  color: #ffffff5f;
+}
+
+/* Clicked Date */
+.win-btn-selected {
+  border: 3px solid red;
+}
+
+button:focus {
+  outline: none;
+}
